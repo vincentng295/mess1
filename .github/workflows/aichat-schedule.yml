@@ -46,10 +46,10 @@ jobs:
   run-aichat:
     runs-on: ubuntu-latest
     env:
-      SCPDIR: ${{ github.workspace }}\scoped_dir
-      COOKIESFILE: ${{ github.workspace }}\cookies.json
-      FBINFOSFILE: ${{ github.workspace }}\facebook_infos.bin
-      SELF_FBINFOFILE: ${{ github.workspace }}\self_facebook_info.bin
+      SCPDIR: ${{ github.workspace }}/scoped_dir
+      COOKIESFILE: ${{ github.workspace }}/cookies.json
+      FBINFOSFILE: ${{ github.workspace }}/facebook_infos.bin
+      SELF_FBINFOFILE: ${{ github.workspace }}/self_facebook_info.bin
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Pass GitHub Token
       GITHUB_REPO: ${{ github.repository }}     # Pass the repository (owner/repo)
       STORAGE_BRANCE: caches/schedule
