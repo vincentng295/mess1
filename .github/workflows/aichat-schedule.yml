@@ -44,7 +44,7 @@ on:
 
 jobs:
   run-aichat:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     env:
       SCPDIR: ${{ github.workspace }}\scoped_dir
       COOKIESFILE: ${{ github.workspace }}\cookies.json
