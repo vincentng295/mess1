@@ -51,16 +51,16 @@ jobs:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Pass GitHub Token
       GITHUB_REPO: ${{ github.repository }}     # Pass the repository (owner/repo)
       STORAGE_BRANCE: caches/schedule
-      PAT: ${{ secrets.PAT }} # Pass GitHub Token
+      PAT : ${{ secrets.PAT }} # Pass PAT Token
       USE_ENV_SETUP: ${{ github.event_name == 'workflow_dispatch' && 'true' || 'false' }}
 
     steps:
       # Checkout the repository
-      - name: Checkout HuskyDG Automatic FB
+      - name: Checkout Gemini FBChat
         uses: actions/checkout@v3
         with:
           repository: vincentng295/gemini_fbchat
-          ref: bridge # Optional: main or tags name
+          ref: main # Optional: main or tags name
 
       # Set up Python
       - name: Set up Python
