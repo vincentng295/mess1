@@ -1,8 +1,6 @@
 name: Run AI Chat on Messenger Account
 
 on:
-  schedule:
-    - cron: "0 3-23/4 * * *"  # Run every 4 hours
   workflow_dispatch:
     inputs:
       username:
@@ -61,7 +59,7 @@ jobs:
         uses: actions/checkout@v3
         with:
           repository: vincentng295/gemini_fbchat
-          ref: main # Optional: main or tags name
+          ref: bridge # Optional: main or tags name
 
       # Set up Python
       - name: Set up Python
