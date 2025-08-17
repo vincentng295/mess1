@@ -1,4 +1,4 @@
-name: Run AI Chat on Messenger Account
+name: Run AI Chat 002
 
 on:
   workflow_dispatch:
